@@ -1,0 +1,48 @@
+.partner {
+    display: flex;
+    background-color: $color-gray-1;
+    // width: 992px;
+    justify-content: center;
+    padding: $pd-8;
+    .partner__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        span {
+            padding-right: $pd-7;
+            @include styleText($color-gray-0, $fs-1, $fw-2);
+        }
+        img {
+            height: 60px;
+            padding-right: $pd-7;
+            &:last-of-type {
+                padding-right: 0;
+            }
+            display: block;
+        }
+    }
+    @include responsive("extra-large") {
+        span {
+            display: none;
+        }
+    }
+    @include responsive("large") {
+        .partner__content {
+            img {
+                height: 50px;
+                padding-right: $pd-6;
+                // display: none;
+            }
+        }
+    }
+    @include responsive("small") {
+        .partner__content {
+            img {
+                padding-right: $pd-8 + 1;
+                &.partner__hidden {
+                    display: none;
+                }
+            }
+        }
+    }
+}

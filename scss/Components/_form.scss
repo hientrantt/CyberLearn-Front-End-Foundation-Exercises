@@ -1,0 +1,51 @@
+.formSearch {
+    span {
+        background-color: $color-white-0;
+        border-right-color: $color-transparent;
+    }
+    .form-control {
+        // border-top: 1px solid $color-gray-5;
+        border: 1px solid $color-gray-5;
+        border-left-color: $color-transparent;
+        &:focus {
+            border-color: $color-transparent;
+            box-shadow: none;
+            border: 1px solid $color-gray-5;
+            border-left-color: $color-transparent;
+            
+        }
+    }
+    .input-group-append {
+        span {
+            background-color: $color-green-0;
+            cursor: pointer;
+            @include styleText($color-white-0, $fs-1, $fw-3);
+        }
+        &:hover span {
+            background-color: $color-green-1;
+        }
+    }
+}
+// .formSearch {
+//     span {
+//         background-color: $color-white-0;
+//         border-right-color: $color-transparent;
+//     }
+//     .form-control {
+//         border-left-color: $color-transparent;
+//         &:focus {
+//             border-color: $color-transparent;
+//             box-shadow: none;
+//         }
+//     }
+//     .input-group-append {
+//         span {
+//             background-color: $color-green-0;
+//             cursor: pointer;
+//             @include styleText($color-white-0, $fs-1, $fw-3);
+//         }
+//         &:hover span {
+//             background-color: $color-green-1;
+//         }
+//     }
+// }

@@ -1,0 +1,24 @@
+.icon-play {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    @include styleText($color-white-0, $fs-8, $fw-6);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: $color-black-4;
+    z-index: 5;
+}
+.icon-check {
+    width: 24px;
+    height: 24px;
+    border: 2px solid $color-black-1;
+    border-radius: 50%;
+    line-height: $lh-1 - 4;
+    @include styleText($color-black-1, $fs-5, $fw-6);
+    text-align: center;
+    margin-right: $mg-4;
+}

@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- OWN CAROUSEL CSS-->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- VENO BOX CSS -->
+    <link rel="stylesheet" href="./css/venobox.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Fiverr</title>
+</head>
+
+<body>
+
+    <!-- HEARDER -->
+    <header class="header">
+        <nav class="navbar navbar-expand">
+            <button class="d-xl-none d-block navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <svg width="89" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#fff">
+                        <path
+                            d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z">
+                        </path>
+                    </g>
+                    <g fill="#1dbf73">
+                        <path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path>
+                    </g>
+                </svg>
+            </a>
+            <div class="header__right">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fiverr Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Explore</a>
+                        </li>
+                        <li class="nav-item header__language">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-globe"></i>
+                                English
+                            </a>
+                        </li>
+                        <li class="nav-item header__money">
+                            <a class="nav-link" href="#">$USD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Become a Seller</a>
+                        </li>
+                        <li class="nav-item header__signin">
+                            <a class="nav-link" href="#">Sign In</a>
+                        </li>
+                        <li class="nav-item header__join">
+                            <a class="btn--transparent" href="#">Join</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <header class="header" id="headerFixed">
+        <nav class="navbar navbar-expand">
+            <button class="d-xl-none d-block navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <svg width="89" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#000000">
+                        <path
+                            d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z">
+                        </path>
+                    </g>
+                    <g fill="#1dbf73">
+                        <path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path>
+                    </g>
+                </svg>
+            </a>
+            <div class="formSearch input-group" id="formHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Find Services">
+                <div class="input-group-append">
+                    <span class="input-group-text">Search</span>
+                </div>
+            </div>
+            <div class="header__right">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fiverr Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Explore</a>
+                        </li>
+                        <li class="nav-item header__language">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-globe"></i>
+                                English
+                            </a>
+                        </li>
+                        <li class="nav-item header__money">
+                            <a class="nav-link" href="#">$USD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Become a Seller</a>
+                        </li>
+                        <li class="nav-item header__signin">
+                            <a class="nav-link" href="#">Sign In</a>
+                        </li>
+                        <li class="nav-item header__join">
+                            <a class="btn--transparent" href="#">Join</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <div id="header__bottom">
+            <ul class="header__list">
+                <li>
+                    <a href="#">Graphics & Design</a>
+                </li>
+                <li>
+                    <a href="#">Digital Marketing</a>
+                </li>
+                <li>
+                    <a href="#">Writing & Translation</a>
+                </li>
+                <li>
+                    <a href="#">Video & Animation</a>
+                </li>
+                <li>
+                    <a href="#">Music & Audio</a>
+                </li>
+                <li>
+                    <a href="#">Programming & Tech</a>
+                </li>
+                <li>
+                    <a href="#">Data <span class="header__new">new</span></a>
+                </li>
+                <li>
+                    <a href="#">Business</a>
+                </li>
+                <li>
+                    <a href="#">Lifestyle</a>
+                </li>
+                <div class="header__next">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </ul>
+        </div>
+    </header>
+    <!-- CAROUSEL -->
+    <section class="carousel">
+        <!-- <div class="carousel__div"> -->
+        <!-- <img src="./img/hero11.jpeg" alt=""> -->
+        <div class="header__fade">
+            <div class="img1">
+                <div class="header__name">
+                    <p>Andrea, <b>Fashion Designer</b></p>
+                </div>
+            </div>
+            <div class="img2">
+                <div class="header__name">
+                    <div class="header__rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>Moon, <b>Marketing Expert</b></p>
+                </div>
+            </div>
+            <div class="img3">
+                <div class="header__name">
+                    <p>Ritika, <b>Shoemaker and Designer</b></p>
+                </div>
+            </div>
+            <div class="img4">
+                <div class="header__name">
+                    <p>Zach, <b>Bar Owner</b></p>
+                </div>
+            </div>
+            <div class="img5">
+                <div class="header__name">
+                    <div class="header__rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>Gabrielle, <b>Video Editor</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel__div">
+            <div class="carousel__cover">
+                <div class="carousel__content">
+                    <h1>Find the perfect <span>freelance</span> services for your business</h1>
+                    <div class="formSearch input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Try &quot;building mobile app&quot;">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Search</span>
+                        </div>
+                    </div>
+
+                    <div class="carousel__popular">
+                        <ul>
+                            <span>Popular:</span>
+                            <li><a href="#">Website Design</a></li>
+                            <li><a href="#">WordPress</a></li>
+                            <li><a href="#">Logo Design</a></li>
+                            <li><a href="#">Dropshipping</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PARTNER -->
+    <section class="partner">
+        <div class="partner__content">
+            <span>Trusted by:</span>
+            <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/facebook.31d5f92.png"
+                alt="fb">
+            <img src=" https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/google2x.06d74c8.png"
+                alt="google">
+            <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/netflix.e3ad953.png"
+                alt="netflix">
+            <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/pandg.8b7310b.png"
+                alt="p&g">
+            <img class="partner__hidden"
+                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/paypal.ec56157.png"
+                alt="paypal">
+        </div>
+    </section>
+    <!-- SERVICES -->
+    <section class="services">
+        <h1>Recently Viewed & More</h1>
+        <div class="services__content">
+            <div class="services-carousel owl-carousel owl-theme">
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card1.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser3.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar1.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create a hand drawn animated GIF with characters</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>4.9<span>(26)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$580</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card2.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser5.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar1.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create an engaging illustration for web, apps and sm</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>5.0<span>(65)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$220</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card3.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser3.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar3.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                                <p class="card-top1">Top Rated Seller</p>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design awesome website or landing page</p>
+                        <div class="card-rate">
+                            <div class="card-stars star--yellow">
+                                <p><i class="fa fa-star"></i>5.0<span>(172)</span></p>
+                            </div>
+                            <!-- <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div> -->
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$325</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card4.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser3.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar4.jpeg" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">fernandobengua</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design top notch social media content</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>4.9<span>(59)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$175</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card5.jpg" class="card-img-top" alt="card1">
+                        <img src="./img/card1.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser2.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar5.jpeg" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">bruno_malagrino</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create a logo design for modern brands</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>5.0<span>(16)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$890</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card6.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser5.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar1.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create a hand drawn animated GIF with characters</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>4.9<span>(26)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$580</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card7.jpg" class="card-img-top" alt="card1">
+                        <img src="./img/ser2.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser3.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser5.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar3.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                                <p class="card-top2">Level 2 Seller</p>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design the ui ux of your website and landing page xd, figma</p>
+                        <div class="card-rate">
+                            <div class="card-stars star--yellow">
+                                <p><i class="fa fa-star"></i>5.0<span>(172)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$325</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card8.jpg" class="card-img-top" alt="card1">
+                        <img src="./img/ser5.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar3.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                                <p class="card-top2">Level 2 Seller</p>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design awesome website or landing page</p>
+                        <div class="card-rate">
+                            <div class="card-stars star--yellow">
+                                <p><i class="fa fa-star"></i>5.0<span>(172)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$325</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card9.jpg" class="card-img-top" alt="card1">
+                        <img src="./img/ser5.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar4.jpeg" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">fernandobengua</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design top notch social media content</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>4.9<span>(59)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$175</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card10.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser3.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser5.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar5.jpeg" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">bruno_malagrino</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create a logo design for modern brands</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>5.0<span>(16)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$890</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/ser3.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar1.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create a hand drawn animated GIF with characters</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>4.9<span>(26)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$580</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser5.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar1.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create an engaging illustration for web, apps and sm</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>5.0<span>(65)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$220</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/ser5.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser3.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar3.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                                <p class="card-top1">Top Rated Seller</p>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design awesome website or landing page</p>
+                        <div class="card-rate">
+                            <div class="card-stars star--yellow">
+                                <p><i class="fa fa-star"></i>5.0<span>(172)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$325</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="">
+                        <img src="./img/ser3.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar4.jpeg" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">fernandobengua</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design top notch social media content</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>4.9<span>(59)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$175</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar5.jpeg" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">bruno_malagrino</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create a logo design for modern brands</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>5.0<span>(16)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$890</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar1.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create a hand drawn animated GIF with characters</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>4.9<span>(26)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$580</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card7.jpg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar3.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                                <p class="card-top2">Level 2 Seller</p>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design the ui ux of your website and landing page xd, figma</p>
+                        <div class="card-rate">
+                            <div class="card-stars star--yellow">
+                                <p><i class="fa fa-star"></i>5.0<span>(172)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$325</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar3.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                                <p class="card-top2">Level 2 Seller</p>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design awesome website or landing page</p>
+                        <div class="card-rate">
+                            <div class="card-stars star--yellow">
+                                <p><i class="fa fa-star"></i>5.0<span>(172)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$325</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/ser5.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar4.jpeg" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">fernandobengua</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design top notch social media content</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>4.9<span>(59)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$175</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/ser4.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser5.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar5.jpeg" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">bruno_malagrino</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create a logo design for modern brands</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>5.0<span>(16)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$890</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/ser3.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar1.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create a hand drawn animated GIF with characters</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>4.9<span>(26)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$580</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/ser2.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar3.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                                <p class="card-top2">Level 2 Seller</p>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design the ui ux of your website and landing page xd, figma</p>
+                        <div class="card-rate">
+                            <div class="card-stars star--yellow">
+                                <p><i class="fa fa-star"></i>5.0<span>(172)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$325</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img//card1.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar3.png" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">lamonastudio</a>
+                                <p class="card-top2">Level 2 Seller</p>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design awesome website or landing page</p>
+                        <div class="card-rate">
+                            <div class="card-stars star--yellow">
+                                <p><i class="fa fa-star"></i>5.0<span>(172)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$325</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card9.jpg" class="card-img-top" alt="card1">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar4.jpeg" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">fernandobengua</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will design top notch social media content</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>4.9<span>(59)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$175</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardProduct">
+                    <div class="card-carousel owl-carousel owl-theme">
+                        <img src="./img/card10.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser5.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser6.jpeg" class="card-img-top" alt="card1">
+                        <img src="./img/ser7.png" class="card-img-top" alt="card1">
+                        <img src="./img/ser8.jpeg" class="card-img-top" alt="card1">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-id">
+                            <img src="./img/avatar5.jpeg" alt="avt1">
+                            <div card-name>
+                                <a class="card-title">bruno_malagrino</a>
+                            </div>
+                        </div>
+                        <p class="card-text">I will create a logo design for modern brands</p>
+                        <div class="card-rate">
+                            <div class="card-stars">
+                                <p><i class="fa fa-star"></i>5.0<span>(16)</span></p>
+                            </div>
+                            <div class="card-pro">
+                                <div class="card-pro-overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr
+                                        for quality and service.</p>
+                                </div>
+                                <img src="./img/pro.svg" alt="pro">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-heart">
+                                <div class="card-heart-overlay">
+                                    <p>Save to My first list</p>
+                                </div>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>Starting at <span>$890</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- PRO SERVICES -->
+    <section class="proser">
+        <h1>Popular professional services</h1>
+        <div class="proser__content">
+            <div class="proser__carousel owl-carousel owl-theme">
+                <div class="card proCard">
+                    <img src="./img/pro1.jpeg" class="card-img-top" alt="pro">
+                    <div class="card-body">
+                        <p class="card-text">Build your brand</p>
+                        <h4 class="card-title">Logo Design</h4>
+                    </div>
+                </div>
+                <div class="card proCard">
+                    <img src="./img/pro2.jpeg" class="card-img-top" alt="pro">
+                    <div class="card-body">
+                        <p class="card-text">Customize your site</p>
+                        <h4 class="card-title">WordPress</h4>
+                    </div>
+                </div>
+                <div class="card proCard">
+                    <img src="./img/pro3.jpeg" class="card-img-top" alt="pro">
+                    <div class="card-body">
+                        <p class="card-text">Share your message</p>
+                        <h4 class="card-title">Voice Over</h4>
+                    </div>
+                </div>
+                <div class="card proCard">
+                    <img src="./img/pro4.jpeg" class="card-img-top" alt="pro">
+                    <div class="card-body">
+                        <p class="card-text">Engage your audience</p>
+                        <h4 class="card-title">Video Explainer</h4>
+                    </div>
+                </div>
+                <div class="card proCard">
+                    <img src="./img/pro5.jpeg" class="card-img-top" alt="pro">
+                    <div class="card-body">
+                        <p class="card-text">Reach more customers</p>
+                        <h4 class="card-title">Social Media</h4>
+                    </div>
+                </div>
+
+                <div class="card proCard">
+                    <img src="./img/pro6.jpeg" class="card-img-top" alt="pro">
+                    <div class="card-body">
+                        <p class="card-text">Unlock growth online</p>
+                        <h4 class="card-title">SEO</h4>
+                    </div>
+                </div>
+                <div class="card proCard">
+                    <img src="./img/pro7.jpeg" class="card-img-top" alt="pro">
+                    <div class="card-body">
+                        <p class="card-text">Color your dreams</p>
+                        <h4 class="card-title">Illustration</h4>
+                    </div>
+                </div>
+                <div class="card proCard">
+                    <img src="./img/pro8.jpeg" class="card-img-top" alt="pro">
+                    <div class="card-body">
+                        <p class="card-text">Go global</p>
+                        <h4 class="card-title">Translation</h4>
+                    </div>
+                </div>
+                <div class="card proCard">
+                    <img src="./img/pro9.jpeg" class="card-img-top" alt="pro">
+                    <div class="card-body">
+                        <p class="card-text">Learn your business</p>
+                        <h4 class="card-title">Data Entry</h4>
+                    </div>
+                </div>
+                <div class="card proCard">
+                    <img src="./img/pro10.jpeg" class="card-img-top" alt="pro">
+                    <div class="card-body">
+                        <p class="card-text">Showcase your story</p>
+                        <h4 class="card-title">Book Covers</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TIPS -->
+    <section class="tips">
+        <div class="tips__section">
+            <div class="tips__content row">
+                <div class="tips__text col-xl-5 col-lg-5 col-12">
+                    <h1>A whole world of freelance talent at your fingertips</h1>
+                    <div class="tips__line">
+                        <p><i class="icon-check fa fa-check"></i> The best for every budget</p>
+                        <p>Find high-quality services at every price point. No hourly rates, just project-based pricing
+                        </p>
+                    </div>
+                    <div class="tips__line">
+                        <p><i class="icon-check fa fa-check"></i> Quality work done quickly</p>
+                        <p>Find the right freelancer to begin working on your project within minutes.</p>
+                    </div>
+                    <div class="tips__line">
+                        <p><i class="icon-check fa fa-check"></i> Protected payments, every time</p>
+                        <p>Always know what you'll pay upfront. Your payment isn't released until you approve the work.
+                        </p>
+                    </div>
+                    <div class="tips__line">
+                        <p><i class="icon-check fa fa-check"></i> 24/7 support</p>
+                        <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
+                    </div>
+                </div>
+                <div class="tips__video col-xl-7 col-lg-7 col-12">
+                    <!-- <div class="tips__img"> -->
+                        <a class="venobox" data-autoplay="true" data-vbtype="video"
+                            href="https://www.youtube.com/vmvv3czyk2ifedefkau7">
+                            <img src=" ./img/video.png" alt="video">
+                            <i class="icon-play fa fa-play"></i>
+                        </a>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- <video class="orca-video" autoplay="" controls="" poster="" preload="metadata" crossorigin="anonymous">
+            <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7"
+                type="video/mp4">
+        </video> -->
+    </section>
+    <!-- MARKETPLACE -->
+    <section class="marketplace">
+        <h1>Explore the marketplace</h1>
+        <div class="marketplace__content">
+            <div class="row row-cols-lg-5 row-cols-sm-3 row-cols-2">
+                <div class="marketplace__item">
+                    <div class="marketplace__center">
+                        <img src="./img/place1.svg" alt="">
+                        <p>Graphics & Design</p>
+                    </div>
+                </div>
+                <div class="marketplace__item">
+                    <div class="marketplace__center">
+                        <img src="./img/place2.svg" alt="">
+                        <p>Digital Marketing</p>
+                    </div>
+                </div>
+                <div class="marketplace__item">
+                    <div class="marketplace__center">
+                        <img src="./img/place3.svg" alt="">
+                        <p>Writing & Translation</p>
+                    </div>
+                </div>
+                <div class="marketplace__item">
+                    <div class="marketplace__center">
+                        <img src="./img/place4.svg" alt="">
+                        <p>Video & Animation</p>
+                    </div>
+                </div>
+                <div class="marketplace__item">
+                    <div class="marketplace__center">
+                        <img src="./img/place5.svg" alt="">
+                        <p>Music & Audio</p>
+                    </div>
+                </div>
+                <div class="marketplace__item">
+                    <div class="marketplace__center">
+                        <img src="./img/place6.svg" alt="">
+                        <p>Programming & Tech</p>
+                    </div>
+                </div>
+                <div class="marketplace__item">
+                    <div class="marketplace__center">
+                        <img src="./img/place7.svg" alt="">
+                        <p>Business</p>
+                    </div>
+                </div>
+                <div class="marketplace__item">
+                    <div class="marketplace__center">
+                        <img src="./img/place8.svg" alt="">
+                        <p>Lifestyle</p>
+                    </div>
+                </div>
+                <div class="marketplace__item">
+                    <div class="marketplace__center">
+                        <img src="./img/place9.svg" alt="">
+                        <p>Data</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SOLUTION -->
+    <section class="solution">
+        <div class="row solution__content">
+            <div class="solution__text col-lg-5 col-12">
+                <div class="solution__top">
+                    <svg width="219" height="27" viewBox="0 0 219 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="#fff">
+                            <path
+                                d="M81.6,13.1h-3.1c-2,0-3.1,1.5-3.1,4.1v9.3h-6V13.1h-2.5c-2,0-3.1,1.5-3.1,4.1v9.3h-6V8.1h6v2.8 c1-2.2,2.3-2.8,4.3-2.8h7.3v2.8c1-2.2,2.3-2.8,4.3-2.8h2L81.6,13.1z M56.4,18.7H44c0.3,2.1,1.6,3.2,3.7,3.2 c1.6,0,2.7-0.7,3.1-1.8l5.3,1.5c-1.3,3.2-4.5,5.1-8.4,5.1c-6.5,0-9.5-5.1-9.5-9.5c0-4.3,2.6-9.4,9.1-9.4c6.9,0,9.2,5.2,9.2,9.1 C56.5,17.8,56.5,18.3,56.4,18.7z M50.7,15.2c-0.1-1.6-1.3-3-3.3-3c-1.9,0-3,0.8-3.4,3H50.7z M27.8,26.5H33l6.6-18.3h-6l-3.2,10.7 L27.2,8.1h-6L27.8,26.5z M3.4,26.5h5.9V13.1H15v13.4h5.9V8.1H9.3V7c0-1.2,0.9-2,2.2-2H15V0h-4.4C6.3,0,3.4,2.7,3.4,6.6v1.5H0v5 h3.4L3.4,26.5z">
+                            </path>
+                            <path
+                                d="M91.7,23.7v2.7h-3.5V0h3.5v10.8c1.1-1.8,3.3-3,5.8-3c5.6,0,8.7,4,8.7,9.4s-3.2,9.4-8.8,9.4 C95,26.7,92.8,25.5,91.7,23.7z M102.6,17.3c0-3.8-2.2-6.4-5.6-6.4c-3.4,0-5.6,2.5-5.6,6.4s2.2,6.4,5.6,6.4 C100.4,23.6,102.6,21.1,102.6,17.3z">
+                            </path>
+                            <path
+                                d="M123.5,26.4H120v-3.2c-1,2.3-3.2,3.5-5.9,3.5c-4.1,0-6.8-3-6.8-7.3V8.1h3.5v10.6c0,2.9,1.7,4.9,4.3,4.9 c2.9,0,4.9-2.3,4.9-5.5V8.1h3.5L123.5,26.4z">
+                            </path>
+                            <path
+                                d="M125,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3c0-3.1,2.7-5.2,6.5-5.2 c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2c0,3.3-2.7,5.5-6.8,5.5 C128.1,26.7,125.2,24.3,125,20.5z">
+                            </path>
+                            <path d="M144.5,8.1H141v18.3h3.5V8.1z"></path>
+                            <path
+                                d="M147.1,8.1h3.5v3.2c1-2.3,3.2-3.5,5.9-3.5c4.1,0,6.8,3,6.8,7.3v11.3h-3.5V15.8c0-2.9-1.7-4.9-4.3-4.9 c-2.9,0-4.9,2.3-4.9,5.5v9.9H147L147.1,8.1z">
+                            </path>
+                            <path
+                                d="M182.9,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3 c0-3.1,2.7-5.2,6.5-5.2c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2 c0,3.3-2.7,5.5-6.8,5.5C186,26.7,183.2,24.3,182.9,20.5z">
+                            </path>
+                            <path
+                                d="M178.7,20.5c-0.5,2.1-2.3,3.2-4.9,3.2c-3.2,0-5.4-2.4-5.7-5.8h14c0-0.3,0.1-0.9,0.1-1.4c0-4.6-3-8.7-8.7-8.7 c-5.6,0-8.8,4.2-8.8,9.3c0,5.1,3.5,9.6,9.2,9.6c4.1,0,7.2-2.1,8.2-5.3L178.7,20.5z M173.4,10.7c3,0,4.9,1.9,5.1,4.6h-10.4 C168.7,12.2,170.5,10.7,173.4,10.7z">
+                            </path>
+                            <path
+                                d="M198.1,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3 c0-3.1,2.7-5.2,6.5-5.2c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2 c0,3.3-2.7,5.5-6.8,5.5C201.2,26.7,198.3,24.3,198.1,20.5z">
+                            </path>
+                            <path
+                                d="M142.7,0c-0.6,0-1.1,0.2-1.6,0.7c-0.4,0.4-0.7,1-0.7,1.6c0,0.6,0.2,1.1,0.7,1.6c0.5,0.4,1,0.7,1.6,0.7 c0.6,0,1.1-0.2,1.6-0.7c0.4-0.5,0.7-1,0.7-1.6c0-0.3-0.1-0.6-0.2-0.9s-0.3-0.5-0.5-0.8c-0.2-0.2-0.5-0.4-0.7-0.5 C143.4,0.1,143.1,0,142.7,0z">
+                            </path>
+                            <path
+                                d="M218.3,24.4L218.3,24.4c0,0.6-0.2,1.2-0.7,1.6c-0.4,0.4-1,0.7-1.6,0.7c-0.6,0-1.2-0.2-1.6-0.7 c-0.4-0.4-0.7-1-0.7-1.6v0c0-0.6,0.2-1.2,0.7-1.6c0.4-0.4,1-0.7,1.6-0.7c0.6,0,1.2,0.2,1.6,0.7C218.1,23.2,218.3,23.8,218.3,24.4z">
+                            </path>
+                        </g>
+                    </svg>
+                    <p>new</p>
+                </div>
+                <h1>A business solution designed for <span>teams</span></h1>
+                <p class="solution__p1">Upgrade to a curated experience packed with tools and benefits, dedicated to
+                    businesses</p>
+                <div class="solution__line">
+                    <i class="icon-check fa fa-check"></i>
+                    <p>Connect to freelancers with proven business experience</p>
+                </div>
+                <div class="solution__line">
+                    <i class="icon-check fa fa-check"></i>
+                    <p>Get matched with the perfect talent by a customer success manager</p>
+                </div>
+                <div class="solution__line">
+                    <i class="icon-check fa fa-check"></i>
+                    <p>Manage teamwork and boost productivity with one powerful workspace</p>
+                </div>
+                <button class="btn--green">Explore Fiverr Business</button>
+            </div>
+            <div class="solution__img col-lg-7 col-12">
+                <img class="img-fluid" src="./img/solution.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- MEMBER -->
+    <section class="member">
+        <div class="member__content">
+            <div class="member__carousel owl-carousel owl-theme">
+                <div>
+                    <div class="member__item row">
+                        <div class="member__img col-lg-5 col-12">
+                            <a class="venobox" data-autoplay="true" data-vbtype="video"
+                                href="https://www.youtube.com/bsncmkwya3nectkensun">
+                                <img src="./img/member1.jpg" alt="video">
+                                <i class="fa fa-play icon-play"></i>
+                            </a>
+                        </div>
+                        <div class="member__text col-lg-7 col-12">
+                            <div>
+                                <div class="member__name">
+                                    <h5>Tim and Dan Joo, Co-Founders</h5>
+                                    <img src="./img/logo-member1.png" alt="">
+                                </div>
+                                <p class="font-domaine">
+                                    <i>"When you want to create a business bigger than yourself,
+                                        you need a lot of help. That's what Fiverr does."</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="member__item row">
+                        <div class="member__img col-lg-5 col-12">
+                            <a class="venobox" data-autoplay="true" data-vbtype="video"
+                                href="https://www.youtube.com/plfa6gdjihpdvr10rchl">
+                                <img src="./img/member2.jpg" alt="video">
+                                <i class="fa fa-play icon-play"></i>
+                            </a>
+                        </div>
+                        <div class="member__text col-lg-7 col-12">
+                            <div>
+                                <div class="member__name">
+                                    <h5>Caitlin Tormey, Chief Commercial Officer</h5>
+                                    <img src="./img/logo-member2.png" alt="">
+                                </div>
+                                <p class="font-domaine">
+                                    <i>"We've used Fiverr for Shopify web development, graphic design, and backend web
+                                        development. Working with Fiverr makes my job a little easier every day."</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="member__item row">
+                        <div class="member__img col-lg-5 col-12">
+                            <a class="venobox" data-autoplay="true" data-vbtype="video"
+                                href="https://www.youtube.com/rb8jtakrisiz0xtsffwi">
+                                <img src="./img/member3.jpg" alt="video">
+                                <i class="fa fa-play icon-play"></i>
+                            </a>
+                        </div>
+                        <div class="member__text col-lg-7 col-12">
+                            <div>
+                                <div class="member__name">
+                                    <h5>Brighid Gannon (DNP, PMHNP-BC), Co-Founder</h5>
+                                    <img src="./img/logo-member3.png" alt="">
+                                </div>
+                                <p class="font-domaine">
+                                    <i>"We used Fiverr for SEO, our logo, website, copy, animated videos — literally
+                                        everything. It was like working with a human right next to you versus being
+                                        across the world."</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="member__item row">
+                        <div class="member__img col-lg-5 col-12">
+                            <a class="venobox" data-autoplay="true" data-vbtype="video"
+                                href="https://www.youtube.com/yja2ld5fnolhsixj3xxw">
+                                <img src="./img/member4.jpg" alt="video">
+                                <i class="fa fa-play icon-play"></i>
+                            </a>
+                        </div>
+                        <div class="member__text col-lg-7 col-12">
+                            <div>
+                                <div class="member__name">
+                                    <h5>Kay Kim, Co-Founder</h5>
+                                    <img src="./img/logo-member4.png" alt="">
+                                </div>
+                                <p class="font-domaine">
+                                    <i>"It's extremely exciting that Fiverr has freelancers from all over the world — it
+                                        broadens the talent pool. One of the best things about Fiverr is that while
+                                        we're sleeping, someone's working."</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- LOGOMARKET -->
+    <section class="logomarket">
+        <div class="logomarket__content">
+            <span class="logomarket__space"></span>
+            <div class="logomarket__left">
+                <div class="logomarket__top">
+                    <svg width="188" height="26" viewBox="0 0 249 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="#FFFFFF">
+                            <path
+                                d="M81.6,13.1h-3.1c-2,0-3.1,1.5-3.1,4.1v9.3h-6V13.1h-2.5c-2,0-3.1,1.5-3.1,4.1v9.3h-6V8.1h6v2.8 c1-2.2,2.3-2.8,4.3-2.8h7.3v2.8c1-2.2,2.3-2.8,4.3-2.8h2L81.6,13.1z M56.4,18.7H44c0.3,2.1,1.6,3.2,3.7,3.2 c1.6,0,2.7-0.7,3.1-1.8l5.3,1.5c-1.3,3.2-4.5,5.1-8.4,5.1c-6.5,0-9.5-5.1-9.5-9.5c0-4.3,2.6-9.4,9.1-9.4c6.9,0,9.2,5.2,9.2,9.1 C56.5,17.8,56.5,18.3,56.4,18.7z M50.7,15.2c-0.1-1.6-1.3-3-3.3-3c-1.9,0-3,0.8-3.4,3H50.7z M27.8,26.5H33l6.6-18.3h-6l-3.2,10.7 L27.2,8.1h-6L27.8,26.5z M3.4,26.5h5.9V13.1H15v13.4h5.9V8.1H9.3V7c0-1.2,0.9-2,2.2-2H15V0h-4.4C6.3,0,3.4,2.7,3.4,6.6v1.5H0v5 h3.4L3.4,26.5z">
+                            </path>
+                            <path d="M88.4,0h3.5v26.6h-3.5V0z"></path>
+                            <path
+                                d="M93.6,17.5c0-5.5,3.9-9.4,9.4-9.4c5.5,0,9.4,3.9,9.4,9.4s-3.9,9.4-9.4,9.4C97.5,26.9,93.6,23,93.6,17.5z M108.8,17.5c0-3.7-2.4-6.3-5.8-6.3c-3.5,0-5.8,2.6-5.8,6.3s2.4,6.3,5.8,6.3C106.4,23.8,108.8,21.2,108.8,17.5z">
+                            </path>
+                            <path
+                                d="M130.1,28.3c0,3.3-2.1,5.7-5.6,5.7h-5.6c-3.8,0-5.8-2.2-5.8-5.4c0-1.5,0.8-2.9,1.9-3.7 c-0.9-0.7-1.4-1.6-1.4-2.8c0-1.5,0.9-2.5,2.2-3.8c-0.8-1-1.2-2.4-1.2-3.8c0-3.8,3-6.3,7-6.3c1,0,2,0.2,2.9,0.5l2.5-2.9l2.2,2 l-2.2,2.5c1,1.1,1.6,2.6,1.6,4.1c0,3.8-3,6.3-7,6.3c-1.3,0-2.5-0.3-3.5-0.7c-0.7,0.8-1,1.2-1,1.8c0,1,0.9,1.5,2,1.5h5.1 C127.6,23.3,130.1,24.9,130.1,28.3z M126.7,28.5c0-1.7-1.1-2.5-2.9-2.5h-4.2c-0.6,0-1.2,0-1.8-0.1c-0.9,0.7-1.2,1.6-1.2,2.6 c0,1.5,1,2.6,2.5,2.6h5.4C126.1,31.1,126.7,30,126.7,28.5z M117.9,14.4c0,2.2,1.7,3.5,3.7,3.5c2,0,3.7-1.3,3.7-3.5 c0-2.2-1.7-3.5-3.7-3.5C119.6,10.9,117.9,12.2,117.9,14.4z">
+                            </path>
+                            <path
+                                d="M130.2,17.5c0-5.5,3.9-9.4,9.4-9.4c5.5,0,9.4,3.9,9.4,9.4s-3.9,9.4-9.4,9.4C134.2,26.9,130.2,23,130.2,17.5z M145.4,17.5c0-3.7-2.4-6.3-5.8-6.3c-3.5,0-5.8,2.6-5.8,6.3s2.4,6.3,5.8,6.3C143.1,23.8,145.4,21.2,145.4,17.5z">
+                            </path>
+                            <path
+                                d="M155,8.4h3.5v3.3c0.8-2.1,2.7-3.5,5.4-3.5c3,0,5.2,1.3,5.9,3.7c0.7-2.1,3.1-3.7,5.9-3.7 c3.9,0,6.4,2.7,6.4,6.9v11.6h-3.5V16c0-2.9-1.5-4.8-3.9-4.8c-2.8,0-4.5,2-4.5,4.8v10.6h-3.5V16c0-2.9-1.5-4.8-3.8-4.8 c-2.8,0-4.5,2-4.5,4.8v10.6H155V8.4z">
+                            </path>
+                            <path
+                                d="M199.3,14.7v11.9h-3.4v-3c-0.9,2-3.2,3.3-5.9,3.3c-3.7,0-6.2-2.3-6.2-5.5c0-3.7,2.4-5.9,7.1-5.9h3.9 c0.7,0,1.1-0.4,1.1-1v-0.1c0-2.2-2-3.6-4.5-3.6s-4.3,1.6-4.5,3.5h-3.2c0.3-3.6,3.5-6.3,7.6-6.3C195.9,8.1,199.3,10.7,199.3,14.7z M195.9,18.6v-0.5h-4.7c-2.8,0-3.9,1.2-3.9,3.3c0,1.6,1.5,2.8,3.4,2.8C193.9,24.1,195.9,22,195.9,18.6z">
+                            </path>
+                            <path d="M207,17.9l-2.3,2.1v6.6h-3.5V0h3.5v15.6l8-7.2h4.5l-7.7,7.1l8.4,11.1h-4.3L207,17.9z">
+                            </path>
+                            <path
+                                d="M243.2,11.4c-3.3,0-4.4,3-4.4,6.9v8.3h-3.5V8.4h3.5v3.5c0.8-2.4,2.3-3.5,4.8-3.5h2.2v3H243.2z">
+                            </path>
+                            <path
+                                d="M230.4,20.7c-0.5,2.1-2.2,3.2-4.9,3.2c-3.2,0-5.4-2.4-5.7-5.8h13.9c0-0.3,0.1-0.9,0.1-1.4 c0-4.6-3-8.6-8.6-8.6c-5.6,0-8.8,4.2-8.8,9.3c0,5.1,3.5,9.5,9.2,9.5c4.1,0,7.2-2.1,8.2-5.3L230.4,20.7L230.4,20.7z M225.2,10.9 c3,0,4.9,1.8,5.1,4.6h-10.4C220.5,12.5,222.3,10.9,225.2,10.9z">
+                            </path>
+                            <path
+                                d="M248.8,24.6L248.8,24.6c0,0.6-0.2,1.2-0.7,1.7c-0.4,0.4-1,0.7-1.6,0.7c-0.3,0-0.6-0.1-0.9-0.2 c-0.3-0.1-0.5-0.3-0.7-0.5c-0.2-0.2-0.4-0.5-0.5-0.7c-0.1-0.3-0.2-0.6-0.2-0.9v0c0-0.3,0.1-0.6,0.2-0.9c0.1-0.3,0.3-0.5,0.5-0.7 c0.2-0.2,0.5-0.4,0.7-0.5c0.3-0.1,0.6-0.2,0.9-0.2c0.6,0,1.2,0.2,1.6,0.7C248.6,23.4,248.8,24,248.8,24.6z">
+                            </path>
+                        </g>
+                    </svg>
+                    <p>beta</p>
+                </div>
+                <h1>Make an incredible logo <span>in minutes</span></h1>
+                <p>Pre-designed by top talent. Just add your touch. </p>
+                <button class="btn--purble">Try Fiverr Logo Maker</button>
+            </div>
+            <div class="logomarket__img d-lg-none d-block">
+                <img src="./img/logomarket2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- INSPIRED -->
+    <section class="inspired">
+        <div class="inspired__content">
+            <div class="inspired__title">
+                <h1>Get inspired with projects made by our freelancers</h1>
+                <a class="inspired__link inspired__link1" href="#">See More Projects <i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="inspired__carousel owl-carousel owl-theme">
+                <div class="card inspiredCard">
+                    <img src="./img/ins1.jpeg" class="card-img-top" alt="inspired">
+                    <div class="card-body">
+                        <img src="./img/avtins1.png" alt="avt">
+                        <div class="card-name">
+                            <a class="card-title">Illustration</a>
+                            <a class="card-text" href="#">by christophbrandl</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card inspiredCard">
+                    <img src="./img/ins2.jpeg" class="card-img-top" alt="inspired">
+                    <div class="card-body">
+                        <img src="./img/avtins2.jpg" alt="avt">
+                        <div class="card-name">
+                            <a class="card-title">Portraits & Caricatures</a>
+                            <a class="card-text" href="#">by spickex</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card inspiredCard">
+                    <img src="./img/ins3.jpeg" class="card-img-top" alt="inspired">
+                    <div class="card-body">
+                        <img src="./img/avtins3.jpg" alt="avt">
+                        <div class="card-name">
+                            <a class="card-title">Product Photography</a>
+                            <a class="card-text" href="#">by passionshake</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card inspiredCard">
+                    <img src="./img/ins4.jpeg" class="card-img-top" alt="inspired">
+                    <div class="card-body">
+                        <img src="./img/avtins4.jpeg" alt="avt">
+                        <div class="card-name">
+                            <a class="card-title">Social Media Design</a>
+                            <a class="card-text" href="#">by fernandobengua</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card inspiredCard">
+                    <img src="./img/ins5.jpeg" class="card-img-top" alt="inspired">
+                    <div class="card-body">
+                        <img src="./img/avtins5.jpg" alt="avt">
+                        <div class="card-name">
+                            <a class="card-title">Illustration</a>
+                            <a class="card-text" href="#">by christophbrandl</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card inspiredCard">
+                    <img src="./img/ins6.jpeg" class="card-img-top" alt="inspired">
+                    <div class="card-body">
+                        <img src="./img/avtins6.jpg" alt="avt">
+                        <div class="card-name">
+                            <a class="card-title">Illustration</a>
+                            <a class="card-text" href="#">by christophbrandl</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card inspiredCard">
+                    <img src="./img/ins7.png" class="card-img-top" alt="inspired">
+                    <div class="card-body">
+                        <img src="./img/avtins7.png" alt="avt">
+                        <div class="card-name">
+                            <a class="card-title">Illustration</a>
+                            <a class="card-text" href="#">by christophbrandl</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card inspiredCard">
+                    <img src="./img/ins8.jpeg" class="card-img-top" alt="inspired">
+                    <div class="card-body">
+                        <img src="./img/avtins8.png" alt="avt">
+                        <div class="card-name">
+                            <a class="card-title">Illustration</a>
+                            <a class="card-text" href="#">by christophbrandl</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="inspired__link inspired__link2" href="#">See More Projects <i class="fa fa-angle-right"></i></a>
+        </div>
+    </section>
+    <!-- GUIDES -->
+    <section class="guides">
+        <div class="guides__content">
+            <div class="guides__title">
+                <h1>Fiverr guides</h1>
+                <a class="guides__link guides__link1" href="#">See More Guides <i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="guides__carousel owl-carousel owl-theme">
+                <div class="card guidesCard">
+                    <img src="./img/guides1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Start an online business and work from home</h5>
+                        <p class="card-text2">A complete guide to starting a small business online</p>
+                    </div>
+                </div>
+
+                <div class="card guidesCard">
+                    <img src="./img/guides2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital marketing made easy</h5>
+                        <p class="card-text2">A practical guide to understand what is digital marketing</p>
+                    </div>
+                </div>
+                <div class="card guidesCard">
+                    <img src="./img/guides3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Create a logo for your business</h5>
+                        <p class="card-text2">A step-by-step guide to create a memorable business logo</p>
+                    </div>
+                </div>
+            </div>
+            <a class="guides__link guides__link2" href="#">See More Guides <i class="fa fa-angle-right"></i></a>
+        </div>
+    </section>
+    <!-- TALENT -->
+    <section class="talent">
+        <div class="talent__content">
+            <div class="talent__text">
+                <div class="talent__center">
+                    <h1>Find the <span>talent</span> needed to get your business <span>growing.</span></h1>
+                    <button class="btn--green">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <div class="footer__content">
+            <div class="footer__top">
+                <div class="row row-cols-lg-5 row-cols-sm-3 row-cols-1">
+                    <div class="footer__list col">
+                        <h6 class="footer__title">
+                            Categories
+                        </h6>
+                        <i class="fa fa-chevron-right icon-right"></i>
+                        <ul class="footer__ul">
+                            <li>
+                                <a href="#">Graphics & Design</a>
+                            </li>
+                            <li>
+                                <a href="#">Digital Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">Writing & Translation</a>
+                            </li>
+                            <li>
+                                <a href="#">Video & Animation</a>
+                            </li>
+                            <li>
+                                <a href="#">Music & Audio</a>
+                            </li>
+                            <li>
+                                <a href="#">Programming & Tech</a>
+                            </li>
+                            <li>
+                                <a href="#">Data</a>
+                            </li>
+                            <li>
+                                <a href="#">Business</a>
+                            </li>
+                            <li>
+                                <a href="#">Lifestyle</a>
+                            </li>
+                            <li>
+                                <a href="#">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__list col">
+                        <h6 class="footer__title">
+                            About
+                        </h6>
+                        <i class="fa fa-chevron-right icon-right"></i>
+                        <ul class="footer__ul">
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#">Press & News</a>
+                            </li>
+                            <li>
+                                <a href="#">Partnerships</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Intellectual Property Claims</a>
+                            </li>
+                            <li>
+                                <a href="#">Investor Relations</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__list col">
+                        <h6 class="footer__title">
+                            Support
+                        </h6>
+                        <i class="fa fa-chevron-right icon-right"></i>
+                        <ul class="footer__ul">
+                            <li>
+                                <a href="#">Help & Support</a>
+                            </li>
+                            <li>
+                                <a href="#">Trust & Safety</a>
+                            </li>
+                            <li>
+                                <a href="#">Selling on Fiverr</a>
+                            </li>
+                            <li>
+                                <a href="#">Buying on Fiverr</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__list col">
+                        <h6 class="footer__title">
+                            Community
+                        </h6>
+                        <i class="fa fa-chevron-right icon-right"></i>
+                        <ul class="footer__ul">
+                            <li>
+                                <a href="#">Events</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Forum</a>
+                            </li>
+                            <li>
+                                <a href="#">Community Standards</a>
+                            </li>
+                            <li>
+                                <a href="#">Podcast</a>
+                            </li>
+                            <li>
+                                <a href="#">Affiliates</a>
+                            </li>
+                            <li>
+                                <a href="#">Invite a Friend</a>
+                            </li>
+                            <li>
+                                <a href="#">Become a Seller</a>
+                            </li>
+                            <li>
+                                <a href="#">Fiverr Elevate <span><br>Exclusive Benefits</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__list col">
+                        <h6 class="footer__title">
+                            More From Fiverr
+                        </h6>
+                        <i class="fa fa-chevron-right icon-right"></i>
+                        <ul class="footer__ul">
+                            <li>
+                                <a href="#">Fiverr Business</a>
+                            </li>
+                            <li>
+                                <a href="#">Fiverr Pro</a>
+                            </li>
+                            <li>
+                                <a href="#">Fiverr Studios</a>
+                            </li>
+                            <li>
+                                <a href="#">Fiverr Logo Maker</a>
+                            </li>
+                            <li>
+                                <a href="#">Fiverr Guides</a>
+                            </li>
+                            <li>
+                                <a href="#">Get Inspired</a>
+                            </li>
+                            <li>
+                                <a href="#">ClearVoice <span><br>Content Marketing</span></a>
+                            </li>
+                            <li>
+                                <a href="#">AND CO <span><br>Invoice Software</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Learn <span><br>Online Courses</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__bottom">
+                <div class="footer__botontent">
+                    <div class="footer__left">
+                        <svg width="77" height="23" viewBox="0 0 91 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#7A7D85">
+                                <path
+                                    d="m82.9 13.1h-3.2c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-13.4h-2.6c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-18.4h6.1v2.8c1-2.2 2.4-2.8 4.4-2.8h7.4v2.8c1-2.2 2.4-2.8 4.4-2.8h2v5zm-25.6 5.6h-12.6c.3 2.1 1.6 3.2 3.8 3.2 1.6 0 2.8-.7 3.1-1.8l5.4 1.5c-1.3 3.2-4.6 5.1-8.5 5.1-6.6 0-9.6-5.1-9.6-9.5 0-4.3 2.6-9.4 9.2-9.4 7 0 9.3 5.2 9.3 9.1 0 .9 0 1.4-.1 1.8zm-5.9-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3.1.8-3.4 3zm-23.1 11.3h5.3l6.7-18.3h-6.1l-3.2 10.7-3.4-10.8h-6.1zm-24.9 0h6v-13.4h5.7v13.4h6v-18.4h-11.6v-1.1c0-1.2.9-2 2.3-2h3.5v-5h-4.4c-4.5 0-7.5 2.7-7.5 6.6v1.5h-3.4v5h3.4z">
+                                </path>
+                            </g>
+                            <g fill="#7A7D85">
+                                <path
+                                    d="m90.4 23.3c0 2.1-1.6 3.7-3.8 3.7s-3.8-1.6-3.8-3.7 1.6-3.7 3.8-3.7c2.2-.1 3.8 1.5 3.8 3.7zm-.7 0c0-1.8-1.3-3.1-3.1-3.1s-3.1 1.3-3.1 3.1 1.3 3.1 3.1 3.1 3.1-1.4 3.1-3.1zm-1.7.8.1.9h-.7l-.1-.9c0-.3-.2-.5-.5-.5h-.8v1.4h-.7v-3.5h1.4c.7 0 1.2.4 1.2 1.1 0 .4-.2.6-.5.8.4.1.5.3.6.7zm-1.9-1h.7c.4 0 .5-.3.5-.5 0-.3-.2-.5-.5-.5h-.7z">
+                                </path>
+                            </g>
+                        </svg>
+                        <span>© Fiverr International Ltd. 2021</span>
+                    </div>
+                    <div class="footer__right">
+                        <div>
+                            <a class="footer__link" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="footer__link" href="#">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a class="footer__link" href="#">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a class="footer__link" href="#">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                            <a class="footer__link" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a class="footer__contact" href="#">
+                                <i class="fa fa-globe"></i>
+                                English
+                            </a>
+                            <a class="footer__contact" href="#">$USD</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- THƯ VIỆN HỖ TRỢ JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script> -->
+    <!-- SLICK JS -->
+    <script src="./js/slick.js"></script>
+    <!-- OWN CAROUSEL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- venobox js -->
+    <script src="./js/venobox.js"></script>
+    <!-- Main js -->
+    <script src="./js/main.js"></script>
+    <!-- carousel -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.header__fade').slick({
+                dots: false,
+                infinite: false,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+    <!-- card -->
+    <script>
+        $('.services-carousel').owlCarousel({
+            loop: false,
+            margin: 0,
+            slideBy: 5,
+            nav: true,
+            navSpeed: 50,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 4
+                },
+                1200: {
+                    items: 5
+                }
+            }
+        })
+        $('.proser__carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            slideBy: 5,
+            nav: true,
+            navSpeed: 100,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 4
+                },
+                1200: {
+                    items: 5
+                }
+            }
+        })
+        $('.member__carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            slideBy: 5,
+            nav: true,
+            navSpeed: 500,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+        $('.inspired__carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            slideBy: 4,
+            nav: true,
+            navSpeed: 100,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
+            }
+        })
+        $('.guides__carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            slideBy: 4,
+            nav: true,
+            navSpeed: 100,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+        $('.card-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            slideBy: 1,
+            nav: true,
+            navSpeed: 200,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+    <!-- VENOBOX -->
+    <script>
+        $(document).ready(function () {
+            $('.venobox').venobox();
+        });
+    </script>
+    <!-- header fixed -->
+    <script>
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("headerFixed").style.zIndex = 50;
+                document.getElementById("headerFixed").style.opacity = 1;
+                if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+                    document.getElementById("formHeader").style.display = "flex";
+                    document.getElementById("header__bottom").style.display = "block";
+                } else {
+                    document.getElementById("formHeader").style.display = "none";
+                    document.getElementById("header__bottom").style.display = "none";
+                }
+            } else {
+                document.getElementById("headerFixed").style.opacity = 0;
+                document.getElementById("headerFixed").style.zIndex = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>

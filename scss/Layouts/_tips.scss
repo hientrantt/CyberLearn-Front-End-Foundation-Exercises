@@ -1,0 +1,62 @@
+.tips {
+    background-color: $color-green-3;
+    .tips__section {
+        @include styleSection($pd-9, $pd-10, $pd-7);
+        h1 {
+            padding-left: 0;
+            padding-bottom: $pd-6;
+            margin-bottom: 0;
+        }
+        .tips__text {
+            padding-right: $pd-7;
+            .tips__line {
+                p:first-child {
+                    @include styleText($color-black-2, $fs-1 + 2, $fw-3);
+                    margin-bottom: $mg-1 - 2;
+                }
+                p:last-child {
+                    @include styleText($color-black-1, $fs-1 + 2, $fw-1);
+                    line-height: $lh-1 + 2;
+                    margin-bottom: $mg-5;
+                }
+            }
+        }
+        .tips__video {
+            padding-left: $pd-12;
+            position: relative;
+            display: flex;
+            align-items: center;
+            a{
+                position: relative;
+            }
+            img {
+                width: 100%;
+            }
+            video {
+                display: none;
+            }
+        }
+    }
+    @include responsive("extra-large") {
+        .tips__section {
+            padding-top: $pd-7;
+            padding-bottom: $pd-7;
+            .tips__text {
+                padding-right: $pd-5;
+            }
+        }
+    }
+    @include responsive("large") {
+        .tips__section {
+            padding-top: $pd-10;
+            padding-bottom: $pd-11;
+            .tips__text{
+                padding-bottom: $pd-4;
+            }
+            .tips__video{
+                padding-left: $pd-8;
+                display: block;
+            }
+        }
+    }
+}

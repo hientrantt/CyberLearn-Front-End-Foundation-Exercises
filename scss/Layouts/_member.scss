@@ -1,0 +1,78 @@
+.member {
+    .member__content {
+        @include styleSection($pd-9, $pd-6, $pd-7);
+    }
+    .member__carousel {
+        padding-bottom: $pd-4;
+    }
+    .member__item {
+        margin: 0 $mg-3;
+        .member__img {
+            padding-right: $pd-5;
+        }
+        .member__text {
+            display: flex;
+            align-items: center;
+            padding: 0 $pd-5;
+        }
+        .member__name {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: $pd-4;
+            h5 {
+                padding-bottom: $pd-8 + 1;
+                line-height: 140%;
+                @include styleText($color-black-5, $fs-7 - 4, $fw-1);
+                padding-right: $pd-4;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            img {
+                border-left: 1px solid $color-black-5;
+                height: 36px;
+                width: auto;
+                display: block;
+                padding-left: $mg-1 + 2;
+            }
+        }
+        p {
+            line-height: 44px;
+            @include styleText($color-black-6, $fs-8, $fw-4);
+        }
+    }
+
+    @include responsive("extra-large") {
+        .member__item {
+            .member__name {
+                display: block;
+                img {
+                    border: none;
+                    padding-left: 0;
+                }
+            }
+            p {
+                font-size: $fs-7;
+                line-height: $lh-4;
+            }
+        }
+    }
+    @include responsive("large") {
+        .member__item {
+            .member__text {
+                padding-left: $pd-8;
+                padding-right: $pd-8;
+                padding-top: $pd-6;
+            }
+            .member__img {
+                padding-right: $pd-8;
+            }
+        }
+    }
+    @include responsive("medium") {
+        .member__content{
+            padding-top: $pd-12;
+            padding-bottom: $pd-10;
+        }
+    }
+}

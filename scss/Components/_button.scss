@@ -1,0 +1,32 @@
+.btn--green {
+    @include styleText($color-white-0, $fs-1, $fw-2);
+    border-radius: $bd-radius-1 + 3;
+    @include styleButton($color-green-0, $color-transparent, $pd-2 + 2, $pd-6);
+    transition: 0.2s;
+    &:hover {
+        background-color: $color-green-1;
+    }
+}
+.btn--purble{
+    @include styleText($color-purble-2, $fs-1, $fw-2);
+    border-radius: $bd-radius-1 + 3;
+    @include styleButton($color-white-0, $color-transparent, $pd-2 + 2, $pd-6);
+    transition: 0.2s;
+    &:hover {
+        background-color: $color-purple-3;
+    }
+}
+.btn--transparent {
+    padding: $pd-3 $pd-4;
+    @include styleText($color-white-0, $fs-1, $fw-2);
+    border-radius: $bd-radius-1;
+    @include styleButton($color-transparent, $color-white-0, $pd-3, $pd-4);
+    transition: 0.2s;
+    line-height: 100%;
+    &:hover {
+        color: $color-white-0;
+        text-decoration: none;
+        background-color: $color-green-1;
+        border-color: $color-green-0;
+    }
+}

@@ -1,0 +1,185 @@
+.header {
+    background-color: $color-transparent;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    .navbar {
+        @include styleSection($pd-6 - 2, $pd-5 + 5, $pd-6 - 2);
+        .navbar-toggler {
+            color: $color-white-0;
+            font-size: $fs-7 + 2;
+            padding: 0;
+        }
+        .navbar-toggler-icon {
+            margin-bottom: $pd-14;
+            display: flex;
+            align-items: center;
+        }
+        .header__right {
+            // width: 70%;
+            margin-left: auto;
+            .navbar-collapse {
+                justify-content: flex-end;
+            }
+            .navbar-nav {
+                align-items: center;
+            }
+            .nav-item {
+                padding: 0 $pd-2;
+                &:last-of-type {
+                    padding-right: 0;
+                }
+            }
+            .nav-link {
+                white-space: nowrap;
+                padding: 0;
+                @include styleText($color-white-0, $fs-1, $fw-2);
+            }
+        }
+    }
+    @include responsive("extra-large") {
+        .header__language,
+        .header__money{
+            display: none;
+        }
+    }
+    @include responsive("large") {
+        .nav-item {
+            display: none;
+        }
+        .header__signin,
+        .header__join {
+            display: block;
+        }
+    }
+    @include responsive("small") {
+        .header__signin {
+            display: none;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            .header__right {
+                // width: auto;
+                margin-left: unset;
+            }
+        }
+    }
+}
+#headerFixed {
+    background-color: $color-white-0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 0;
+    hr {
+        margin: 0;
+    }
+    .navbar {
+        .navbar-toggler {
+            color: $color-black-0;
+        }
+        #formHeader {
+            margin: 0 $mg-5;
+            max-width: 30%;
+        }
+        .header__right {
+            .nav-link {
+                color: $color-black-0;
+                @include styleText($color-black-1, $fs-1, $fw-1);
+            }
+            .btn--transparent {
+                @include styleText($color-green-0, $fs-1, $fw-1);
+                border: 1px solid $color-green-0;
+                &:hover {
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+    .header__list {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        li {
+            padding: $pd-2 $pd-2 - 2;
+            list-style: none;
+            &:hover {
+                cursor: pointer;
+                transition: 0.2s;
+                border-bottom: 3px solid $color-green-0;
+            }
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+        a {
+            @include styleText($color-black-1, $fs-1, $fw-1);
+            line-height: $lh-1;
+            text-decoration: none;
+        }
+        .header__new {
+            padding: $pd-1 + 3 $pd-3;
+            margin-left: $mg-4 + 1;
+            border: 1px solid $color-pink-0;
+            @include styleText($color-pink-0, $fs-5 - 2, $fw-3);
+            line-height: 100%;
+            text-transform: uppercase;
+            border-radius: 45%;
+        }
+    }
+    .header__next{
+        @include styleText($color-black-0, $fs-1, $fw-6);
+        // background: blue;
+        width: 84px;
+        height: 44px;
+        line-height: 47px;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        background: linear-gradient(to right, $color-white-1, $color-white-2);
+        display: none;
+    }
+    @include responsive("extra-large") {
+        .input-group-append{
+            display: none;
+        }
+        .header__next{
+            display: block;
+        }
+        .header__list:hover{
+            cursor: pointer;
+        }
+    }
+    @include responsive("small") {
+        opacity: 1 !important;
+        z-index: 50 !important;
+        #formHeader {
+            display: none !important;
+        }
+    }
+}
+#header__bottom {
+    @include styleSection($pd-1, $pd-5 + 5, $pd-1);
+    white-space: nowrap;
+    .header__new {
+        padding: $pd-1 + 3 $pd-3;
+        margin-left: $mg-4 + 1;
+        border: 1px solid $color-pink-0;
+        @include styleText($color-pink-0, $fs-5 - 2, $fw-3);
+        line-height: 100%;
+        text-transform: uppercase;
+        border-radius: 45%;
+    }
+    @include responsive("small") {
+        display: none !important;
+    }
+}

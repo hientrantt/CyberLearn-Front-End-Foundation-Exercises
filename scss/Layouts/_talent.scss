@@ -1,0 +1,53 @@
+.talent {
+    @include styleSection($pd-1, $pd-10, $pd-13);
+    .talent__content {
+        display: flex;
+        align-items: center;
+        padding: $pd-10 - 4 $pd-9 - 5;
+        height: 440px;
+        background: url(../img/talent.png);
+        background-position: center;
+        background-size: cover;
+        .talent__center {
+            max-width: 625px;
+        }
+        .talent__text {
+            display: flex;
+            justify-content: left;
+        }
+        h1 {
+            margin-bottom: $mg-6;
+            color: $color-white-0;
+            @include styleText($color-white-0, $fs-3, $fw-3);
+            padding: 0;
+            span {
+                font-family: DomaineDisplay, Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-weight: $fw-4;
+                font-style: italic;
+            }
+        }
+    }
+    @include responsive("extra-large") {
+        padding-bottom: $pd-9;
+        .talent__content {
+            height: unset;
+            padding: $pd-12 + 4 $pd-5 + 2;
+            .talent__center{
+                max-width: 425px;
+            }
+            h1 {
+                font-size: $fs-6 - 4;
+                line-height: $lh-4 + 4;
+            }
+        }
+    }
+    @include responsive("large") {
+        padding-bottom: $pd-7;
+        .talent__content{
+            background: $color-red-0;
+            .talent__center {
+                width: auto;
+            }
+        }
+    }
+}

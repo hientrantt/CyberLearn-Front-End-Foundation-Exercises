@@ -1,0 +1,83 @@
+.logomarket {
+    @include styleSection($pd-1, $pd-10, $pd-9);
+    img{
+        width: 100%;
+    }
+    .logomarket__content {
+        padding: $pd-10 - 4 $pd-12;
+        background: url(../img/logomarket.png) $color-purble-2;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: left;
+        .logomarket__top {
+            display: flex;
+            p {
+                @include styleText($color-white-0, $fs-4 + 2, $fw-3);
+                line-height: 100%;
+                text-transform: uppercase;
+                margin-left: $mg-2 + 2;
+                padding-top: $pd-3 - 2;
+            }
+        }
+        h1{
+            margin-top: $mg-2;
+            color: $color-white-0;
+            padding: 0;
+            span{
+                display: block;
+                font-family: DomaineDisplay,Helvetica Neue,Helvetica,Arial,sans-serif;
+                font-weight: $fw-4;
+                font-style: italic;
+            }
+        }
+        p{
+            color: $color-white-0;
+            margin-bottom: $mg-5;
+            line-height: 24px;
+        }
+    }
+    @include responsive("extra-large"){
+        .logomarket__content{
+            padding: $pd-10 - 4 $pd-5 + 2;
+        }
+    }
+    @include responsive("large"){
+        padding-bottom: $pd-12 + 4;
+        .logomarket__content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            background: $color-purble-2;
+        }
+        .logomarket__left{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: $mg-7 + 4 $mg-7;
+        }
+        .logomarket__space{
+            display: block;
+            height: 65px;
+        }
+    }
+    @include responsive("medium"){
+        .logomarket__space{
+            height: 95px;
+        }
+    }
+    @include responsive("small"){
+        padding: 0 0 $pd-10 0;
+        .logomarket__space{
+            height: 150px;
+        }
+        .logomarket__content{
+            h1{
+                span{
+                    display: inline;
+                }
+            }
+        }
+    }
+}

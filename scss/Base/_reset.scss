@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: $color-white-0;
+    // font: $fw-1 $fs-1/$lh-1 Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: $fw-1;
+    font-stretch: normal;
+    font-size: $fs-1;
+    line-height: $lh-1;
+    font-family: Macan, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $color-black-1;
+    position: relative;
+    width: 100%;
+}

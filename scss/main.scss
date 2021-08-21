@@ -1,0 +1,35 @@
+//Helpers -> tạo biến, mixin, extend
+@import './Helpers/variables';
+@import './Helpers/mixin';
+
+//Vendors -> file scss của các thư viện
+@import './Vendors/slick.scss';
+@import './Vendors/slick-theme.scss';
+
+//Base -> các file reset hoặc sửa code của thư viện
+@import './Base/reset';
+@import './Base/customize';
+
+//Layouts -> từng thành phần của trang web
+@import './Layouts/header';
+@import './Layouts/carousel';
+@import './Layouts/partner';
+@import './Layouts/services';
+@import './Layouts/proservices';
+@import './Layouts/tips';
+@import './Layouts/marketplace';
+@import './Layouts/solution';
+@import './Layouts/member';
+@import './Layouts/logomarket';
+@import './Layouts/talent';
+@import './Layouts/inspired';
+@import './Layouts/guidesCard';
+@import './Layouts/footer';
+//Components -> các thành phần nhỏ nhưng được dùng ở nhiều nơi trong web -> button, form ...
+@import './Components/card';
+@import './Components/icon';
+@import './Components/button';
+@import './Components/form';
+//Pages -> các thay đổi chỉ áp dụng cho 1 trang -> vs homepage
+
+//Theme -> những thay đổi của các them riêng -> vd dark

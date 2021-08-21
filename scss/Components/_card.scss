@@ -1,0 +1,303 @@
+.cardProduct {
+    margin: $mg-2;
+    .card-body {
+        overflow: unset;
+        padding: $pd-2 + 2;
+        .card-id {
+            display: flex;
+            align-items: center;
+            height: 34px;
+            img {
+                margin-right: $mg-1;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                border: 0.1px solid $color-gray-0;
+            }
+            .card-title {
+                margin: 0;
+                cursor: pointer;
+                @include styleText($color-black-3, $fs-2, $fw-1);
+            }
+            p {
+                @include styleText($color-yellow-0, $fs-2, $fw-4);
+                margin: 0;
+                line-height: 120%;
+                &.card-top2 {
+                    color: $color-gray-0;
+                }
+            }
+        }
+        .card-text {
+            transition: 0.5s;
+            cursor: pointer;
+            color: $color-black-3;
+            line-height: $lh-1 - 2;
+            margin: $mg-2 0;
+        }
+        .card-rate {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: $mg-1;
+            border-bottom: 1px solid $color-gray-2;
+            .card-stars {
+                @include styleText($color-green-2, $fs-2, $fw-6);
+                &.star--yellow {
+                    color: $color-yellow-0;
+                }
+                p {
+                    font-weight: $fw-3;
+                    margin: 0;
+                }
+                i {
+                    margin-right: $mg-4;
+                }
+                span {
+                    @include styleText($color-gray-0, $fs-2, $fw-1);
+                    margin-left: $mg-3;
+                }
+            }
+            
+            .card-pro {
+                position: relative;
+            }
+            .card-pro-overlay {
+                transition: 0.3s;
+                display: none;
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                p {
+                    margin-bottom: $mg-2 + 1;
+                    position: relative;
+                    padding: 8px;
+                    width: 250px;
+                    @include styleText($color-white-0, $fs-5, $fw-2);
+                    line-height: $lh-3;
+                    background: $color-black-3;
+                    border-radius: $bd-radius-1;
+                    &::after {
+                        content: "";
+                        background-color: $color-black-3;
+                        width: 10px;
+                        height: 10px;
+                        position: absolute;
+                        bottom: -4px;
+                        left: 120px;
+                        transform: rotate(45deg);
+                    }
+                    &:hover{
+                        cursor: text;
+                    }
+                }
+            }
+            .card-pro img {
+                width: 86px;
+                &.img--none {
+                    display: none;
+                }
+            }
+            .card-pro:hover {
+                cursor: pointer;
+            }
+            .card-pro:hover .card-pro-overlay {
+                display: block;
+            }
+            .card-pro-overlay:hover {
+                display: block;
+            }
+        }
+        .card-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $color-gray-0;
+            margin-top: $mg-1;
+            .card-heart{
+                position: relative;
+                &:hover{
+                    cursor: pointer;
+                }
+                &:hover .card-heart-overlay{
+                    display: block;
+                }
+            }
+            .card-heart-overlay{
+                transition: 0.3s;
+
+                display: none;
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                p {
+                    margin-bottom: $mg-2 + 1;
+                    position: relative;
+                    padding: $pd-8 - 3;
+                    width: 155px;
+                    @include styleText($color-white-0, $fs-2, $fw-2);
+                    line-height: $lh-1 - 3;
+                    background: $color-black-1;
+                    border-radius: $bd-radius-1;
+                    text-transform: none;
+                    &::after {
+                        content: "";
+                        background-color: $color-black-1;
+                        width: 10px;
+                        height: 10px;
+                        position: absolute;
+                        bottom: -4px;
+                        left: 73px;
+                        transform: rotate(45deg);
+                    }
+                    &:hover{
+                        cursor: text;
+                    }
+                }
+                &:hover{
+                    display: block;
+                }
+                
+            }
+            p {
+                margin: 0;
+                color: $color-black-1;
+                text-transform: uppercase;
+                @include styleText($color-black-1, $fs-5, $fw-1);
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            span {
+                font-size: $fs-1 + 2;
+            }
+        }
+    }
+    &:hover .card-text {
+        color: $color-green-2;
+    }
+}
+.inspiredCard {
+    margin: $mg-2;
+    img {
+        height: 230px;
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+    .card-body {
+        padding: $pd-8 + 1;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: $mg-2;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 0.1px solid $color-gray-0;
+        }
+        .card-name {
+            display: flex;
+            flex-direction: column;
+            a {
+                cursor: pointer;
+                text-decoration: none;
+                @include styleText($color-black-2, $fs-2, $fw-3);
+                line-height: $lh-1 -3;
+            }
+            .card-text {
+                @include styleText($color-black-7, $fs-2, $fw-1);
+            }
+        }
+        .card-title {
+            margin-bottom: 0;
+        }
+    }
+}
+.guidesCard {
+    margin: $mg-2;
+    border: none;
+    img {
+        margin-bottom: $mg-2 + 1;
+        transition: 0.5s;
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+    .card-body {
+        padding: 0;
+        p{
+            margin: 0;
+        }
+        img {
+            cursor: pointer;
+        }
+        .card-text2 {
+            color: $color-black-5;
+        }
+        .card-title {
+            @include styleText($color-black-2, $fs-1 + 2, $fw-3);
+            margin-bottom: $mg-4;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+.proCard {
+    position: relative;
+    margin: $mg-2;
+    transition: 0.5s;
+    .card-body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: $pd-8 + 1;
+        .card-text {
+            margin-bottom: 0;
+            line-height: $lh-1 - 4;
+            @include styleText($color-white-0, $fs-2, $fw-1);
+        }
+        .card-title {
+            @include styleText($color-white-0, $fs-7, $fw-3);
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        opacity: 0.85;
+    }
+}
+.owl-carousel {
+    .owl-dots {
+        display: none;
+    }
+    .owl-nav button {
+        &.owl-next,
+        &.owl-prev {
+            display: block;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.137);
+            display: inline-block;
+            background-color: $color-white-0;
+            @include styleText($color-black-0, $fs-6, $fw-4);
+            position: absolute;
+            top: 39%;
+            z-index: 10;
+            right: -15px;
+            &:hover {
+                color: $color-black-0;
+                background-color: $color-white-0;
+            }
+        }
+        &.owl-prev {
+            left: -15px;
+        }
+    }
+    .owl-nav{
+        margin: 0;
+    }
+}

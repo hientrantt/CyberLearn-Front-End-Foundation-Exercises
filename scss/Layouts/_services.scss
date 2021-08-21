@@ -1,0 +1,37 @@
+.services {
+    @include styleSection($pd-9, $pd-6, $pd-5);
+    .card-carousel.owl-carousel {
+        overflow: hidden;
+
+        .owl-nav {
+            button {
+                &.owl-prev {
+                    transform: translateX(-90%);
+                    border-radius: 0 50% 50% 0;
+                }
+                &.owl-next {
+                    border-radius: 50% 0 0 50%;
+                    transform: translateX(90%);
+                }
+                &.owl-next,
+                &.owl-prev {
+                    width: 38px;
+                    height: 38px;
+                    font-size: $fs-7;
+                    transition: 0.3s;
+                }
+            }
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover .owl-nav button.owl-prev,
+        &:hover .owl-nav button.owl-next {
+            transform: translateX(0);
+        }
+    }
+    @include responsive("large"){
+        padding-top: $pd-11;
+        padding-bottom: $pd-2;
+    }
+}

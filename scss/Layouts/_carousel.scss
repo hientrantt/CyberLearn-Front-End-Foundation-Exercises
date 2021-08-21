@@ -1,0 +1,184 @@
+.carousel {
+    height: 680px;
+    position: relative;
+    .carousel__div {
+        @include styleSection($pd-6 - 2, $pd-5 + 5, $pd-6 - 2);
+    }
+    .header__fade {
+        button.slick-next.slick-arrow,
+        button.slick-prev.slick-arrow {
+            display: none !important;
+        }
+        div {
+            height: 680px;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            &.img1 {
+                background-image: url(../img/hero11.jpeg);
+            }
+            &.img2 {
+                background-image: url(../img/hero22.jpeg);
+            }
+            &.img3 {
+                background-image: url(../img/hero33.jpeg);
+            }
+            &.img4 {
+                background-image: url(../img/hero44.jpeg);
+            }
+            &.img5 {
+                background-image: url(../img/hero55.jpeg);
+            }
+            p {
+                position: absolute;
+                bottom: 7%;
+                right: 5%;
+                color: $color-white-0;
+                margin: 0;
+            }
+            .header__rate {
+                height: 20px;
+                width: 100px;
+                display: flex;
+                margin-right: $mg-1;
+                // color: $color-yellow-0;
+                @include styleText($color-yellow-0, $fs-2 - 2, $fw-6);
+                position: absolute;
+                bottom: 10%;
+                right: 5%;
+            }
+        }
+        // .header__name{
+        //     display: block;
+        // }
+    }
+    .carousel__cover {
+        position: absolute;
+        top: 0;
+        max-width: 700px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        // .carousel__content {
+        h1 {
+            padding-left: 0;
+            font-size: $fs-3;
+            line-height: $lh-2;
+            font-weight: $fw-3;
+            color: $color-white-0;
+            padding-bottom: $pd-6;
+            margin-bottom: 0;
+            span {
+                font-family: DomaineDisplay, Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-weight: $fw-4;
+            }
+        }
+    }
+    .carousel__popular {
+        color: $color-white-0;
+        padding-top: $pd-6;
+        display: block;
+        .ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        span {
+            margin-right: $mg-1 + 2;
+            font-weight: $fw-2;
+        }
+        li {
+            list-style: none;
+            display: inline;
+            margin-right: $mg-1 + 2;
+        }
+        a {
+            color: $color-white-0;
+            @include styleText($color-white-0, $fs-2, $fw-2);
+            @include styleButton($color-transparent, $color-white-0, $pd-3, $pd-2 + 2);
+            line-height: 24px;
+            text-decoration: none;
+            border-radius: $bd-radius-2;
+            transition: 0.2s;
+            &:hover {
+                background-color: $color-white-0;
+                color: $color-black-0;
+            }
+        }
+        // }
+    }
+    @include responsive("extra-large") {
+        .carousel__cover {
+            max-width: 560px;
+            h1 {
+                font-size: 40px;
+                line-height: 48px;
+            }
+            .carousel__popular {
+                li {
+                    margin-right: 0;
+                }
+            }
+        }
+        .header__fade {
+            height: 100%;
+            div {
+                background-position: right;
+                 &.img1 {
+                    background-image: url(../img/hero1.png);
+                }
+                &.img2 {
+                    background-image: url(../img/hero2.png);
+                }
+                &.img3 {
+                    background-image: url(../img/hero3.png);
+                }
+                &.img4 {
+                    background-image: url(../img/hero4.png);
+                }
+                &.img5 {
+                    background-image: url(../img/hero5.png);
+                }
+            }
+        }
+    }
+    @include responsive("large") {
+        // .carousel{
+            height: 460px;
+        // }
+        .carousel__popular {
+            display: none;
+        }
+        .carousel__cover {
+            padding: $pd-9 $pd-9 + 3 $pd-9 $pd-7 + 4;
+            max-width: unset;
+            .formSearch .input-group-append {
+                margin-top: $mg-2 - 3;
+                width: 100%;
+                display: block;
+                .input-group-text {
+                    display: block;
+                }
+            }
+        }
+        .header__fade{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            div{
+                height: 100%;
+                background-size: cover;
+                background-image: url(../img/green.png);
+                .header__name{
+                    .header__rate, p{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("small") {
+        .carousel__cover {
+            padding: 0 $pd-5 + 5 0 0;
+        }
+    }
+}
